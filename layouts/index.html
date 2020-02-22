@@ -229,6 +229,7 @@
       {{ end }}
       {{ end }}
 
+<!--
       <div class="row experience-skill">
         {{ if $data.homepage.education.enable }}
         {{ with $data.homepage.education }}
@@ -242,7 +243,7 @@
                 {{ with .degree }} <span>{{ . | markdownify }}</span> {{ end }}
                 {{ with .major }} <span>{{ . | markdownify }}</span> {{ end }}
                 {{ with .school }} <span>{{ . | markdownify }}</span> {{ end }}
-                {{ with .gradduation }} <span>{{ . | markdownify }}</span> {{ end }}
+                {{ with .graduation }} <span>{{ . | markdownify }}</span> {{ end }}
               </div>
             </li>
             {{ end }}
@@ -250,7 +251,7 @@
         </div>
         {{ end }}
         {{ end }}
-  
+ --> 
 
       {{ if $data.homepage.skill.enable }}
       {{ with $data.homepage.skill }}

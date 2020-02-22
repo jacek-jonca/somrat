@@ -229,6 +229,29 @@
       {{ end }}
       {{ end }}
 
+      <div class="row experience-skill">
+        {{ if $data.homepage.education.enable }}
+        {{ with $data.homepage.education }}
+        <div class="col-lg-6 col-sm-6 col-11 experience wow fadeInUp" data-wow-duration="1.5s">
+          <h3>{{ .title }}</h3>
+          <ul class="experience-chart">
+            {{ range .education_list }}
+            <li>
+              <div class="single-experience">
+                <h4>{{ .name | markdownify }}</h4>
+                {{ with .degree }} <span>{{ . | markdownify }}</span> {{ end }}
+                {{ with .major }} <span>{{ . | markdownify }}</span> {{ end }}
+                {{ with .school }} <span>{{ . | markdownify }}</span> {{ end }}
+                {{ with .gradduation }} <span>{{ . | markdownify }}</span> {{ end }}
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+        {{ end }}
+  
+
       {{ if $data.homepage.skill.enable }}
       {{ with $data.homepage.skill }}
       <div class="col-lg-6 col-sm-6 col-11 skill wow fadeInUp" data-wow-duration="1.5s">

@@ -2,12 +2,6 @@
    Start Preloader & General Styling
 ----------------------------------*/
 
-@font-face {
-  font-family: 'League Spartan Variable';
-  src: url('/plugins/LeagueSpartan/LeagueSpartanVariable.woff2') format('woff2-variations');
-  font-weight: 500 800;
-}
-
 html {
   height: 100%;
 }
